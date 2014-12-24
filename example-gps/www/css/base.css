@@ -8201,3 +8201,23 @@ button.close {
     display: none !important;
   }
 }
+/* line 1, ../scss/layout/_layout.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../scss/layout/_layout.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 1, ../scss/components/_map.scss */
+section.section-map {
+  height: 100%;
+}
+/* line 3, ../scss/components/_map.scss */
+section.section-map .map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
