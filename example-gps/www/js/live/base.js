@@ -162,11 +162,21 @@ var app = {
         // current GPS coordinates
         //
         var onSuccess = function(position) {
+
+            var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
             var mapOptions = {
-                zoom: 8,
-                center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
+                zoom: 12,
+                center: myLatlng
             };
-            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Hello World!'
+            });
         };
 
         // onError Callback receives a PositionError object
@@ -184,4 +194,5 @@ var app = {
     //app.initialize();
     MapManager.init();
     CameraManager.init();
+
 });
