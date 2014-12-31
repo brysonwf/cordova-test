@@ -29,35 +29,17 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Tactile</a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Take Photo <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a class="capture-photo" href="#" >Capture Photo</a></li>
-                                    <li><a class="capture-editable" href="#" >Capture Editable Photo</a></li>
-                                    <li><a class="capture-library" href="#" >From Photo Library</a></li>
-                                    <li><a class="capture-album" href="#" >From Photo Album</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
+            <div class="btn-group dropup btn-group-camera pull-right">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-camera fa-2x"></i>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a class="capture-photo" href="#" >Capture Photo</a></li>
+                    <li><a class="capture-editable" href="#" >Capture Editable Photo</a></li>
+                    <li><a class="capture-library" href="#" >From Photo Library</a></li>
+                    <li><a class="capture-album" href="#" >From Photo Album</a></li>
+                </ul>
+            </div>
         </header>
         <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
         <img style="display:none;" id="largeImage" src="" />

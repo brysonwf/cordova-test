@@ -3,5 +3,28 @@ html, body {
 }
 
 body{
-  padding-top: 50px;
+
+  header{
+    position: absolute;
+    bottom:15px;
+    right:10px;
+    z-index: 1;
+
+    .btn-group{
+      .btn-link{
+        padding:5px;
+
+        .fa{
+          text-shadow: 0 1px 1px rgba(0,0,0,.8);
+        }
+      }
+      &.open{
+        .btn-link{
+          .fa{
+            text-shadow: 0 1px 0 rgba(0,0,0,1);
+          }
+        }
+      }
+    }
+  }
 }
