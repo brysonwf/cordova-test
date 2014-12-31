@@ -10891,8 +10891,8 @@ html, body {
 /* line 7, ../scss/layout/_layout.scss */
 body header {
   position: absolute;
-  bottom: 15px;
-  right: 10px;
+  bottom: 20px;
+  right: 15px;
   z-index: 1;
 }
 /* line 14, ../scss/layout/_layout.scss */

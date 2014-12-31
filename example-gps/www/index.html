@@ -28,18 +28,22 @@
         <title>GPS</title>
     </head>
     <body>
-        <header>
-            <div class="btn-group dropup btn-group-camera pull-right">
-                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-camera fa-2x"></i>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a class="capture-photo" href="#" >Capture Photo</a></li>
-                    <li><a class="capture-editable" href="#" >Capture Editable Photo</a></li>
-                    <li><a class="capture-library" href="#" >From Photo Library</a></li>
-                    <li><a class="capture-album" href="#" >From Photo Album</a></li>
-                </ul>
-            </div>
+        <header class="text-right">
+            <button type="button" class="btn btn-link btn-open capture-library">
+                <i class="fa fa-folder-open fa-2x"></i>
+            </button>
+            <button type="button" class="btn btn-link btn-camera capture-photo">
+                <i class="fa fa-camera fa-3x"></i>
+            </button>
+            <!--<div class="btn-group dropup btn-group-camera pull-right">-->
+                <!--<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">-->
+                    <!--Options-->
+                <!--</button>-->
+                <!--<ul class="dropdown-menu" role="menu">-->
+                    <!--<li><a class="capture-editable" href="#" >Capture Editable Photo</a></li>-->
+                    <!--<li><a class="capture-album" href="#" >From Photo Album</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
         </header>
         <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
         <img style="display:none;" id="largeImage" src="" />
