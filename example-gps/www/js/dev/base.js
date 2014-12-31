@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 
-    app.initialize();
+    //app.initialize();
     MapManager.init();
-
+    CameraManager.init();
 });

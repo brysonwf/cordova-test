@@ -22,8 +22,5 @@ var MapManager = {
         }
 
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
-
-
-        google.maps.event.addDomListener(window, 'load', initialize);
     }
 }
